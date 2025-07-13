@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pedidos de Lanche</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Lanches Delícia</h1>
+  </header>
+
+  <main>
+    <section id="menu">
+      <h2>Cardápio</h2>
+      <div class="item">
+        <h3>X-Burguer</h3>
+        <p>R$ 15,00</p>
+        <button onclick="addToCart('X-Burguer', 15)">Adicionar</button>
+      </div>
+      <div class="item">
+        <h3>Batata Frita</h3>
+        <p>R$ 10,00</p>
+        <button onclick="addToCart('Batata Frita', 10)">Adicionar</button>
+      </div>
+      <div class="item">
+        <h3>Refrigerante</h3>
+        <p>R$ 6,00</p>
+        <button onclick="addToCart('Refrigerante', 6)">Adicionar</button>
+      </div>
+    </section>
+
+    <section id="carrinho">
+      <h2>Carrinho</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: R$ <span id="total">0</span>,00</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+  
